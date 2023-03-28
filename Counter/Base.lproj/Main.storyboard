@@ -34,7 +34,7 @@
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="increment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SHA-zE-0TF"/>
+                                    <action selector="increment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OSb-Ex-Kuj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afe-Fb-4Li">
@@ -45,18 +45,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="-"/>
                                 <connections>
-                                    <action selector="decrement:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QGw-E9-mhJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIe-aC-Tnd">
-                                <rect key="frame" x="148" y="435" width="96" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.58062200249999996" green="0.90196078430000004" blue="0.87474162560000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" systemColor="labelColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="0"/>
-                                <connections>
-                                    <action selector="zeroCounter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kA8-cN-kXB"/>
+                                    <action selector="decrement:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iRn-4g-jNV"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="История изменений:" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="L4T-kK-Ljz">
@@ -67,12 +56,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIe-aC-Tnd">
+                                <rect key="frame" x="148" y="432" width="96" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58062200249999996" green="0.90196078430000004" blue="0.87474162560000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="0"/>
+                                <connections>
+                                    <action selector="zeroCounter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mu4-Xm-Tm8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="counterLabel" destination="xbX-Fa-40P" id="1dN-aY-R11"/>
+                        <outlet property="counterLabel" destination="xbX-Fa-40P" id="vdJ-02-VES"/>
                         <outlet property="storyView" destination="L4T-kK-Ljz" id="mgZ-6R-Sg5"/>
                     </connections>
                 </viewController>
